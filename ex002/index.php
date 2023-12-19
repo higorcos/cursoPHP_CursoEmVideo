@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Word</title>
+    <title>Exemplo</title>
 </head>
 <body>
-    <h1>Hello Word PHP
+    <h1>ex 02
     </h1>
-
         <?php
-            echo 'Olá, mundo';
-            print 'Olá, mundo';
+            date_default_timezone_set('America/Sao_Paulo');
+           echo "Hoje é dia ". date("d-m-Y");
+           echo ' e a hora atual  é' , date("G:i:s");  
         ?>
-    <p>Hora do recomeço !!</p>
 </body>
 </html>
