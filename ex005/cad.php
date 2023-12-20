@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../ultils/style.css">
     <title>Exemplo - 
     <?php
-            $titulo = "Formulários com PHP";
+            $titulo = "Resultado Formulários com PHP";
         
            echo "$titulo";  
         ?>
@@ -22,14 +22,15 @@
            ?>
     </h1>
     </header>
-    <section>
-        <form action="cad.php" method="post">
-            <label for="nome"> Nome </label>
-            <input type="text" name="nome" id="idNome">
-            <label for="sobrenome"> Sobrenome </label>
-            <input type="text" name="sobrenome" id="idSobrenome">
-            <input type="submit" value="ENVIAR">
-        </form>
-    </section>
+   <main>
+
+       <?php
+       $n = $_POST["nome"] ?? "";
+       $s = $_POST['sobrenome'] ?? "";
+      
+        echo("<p>SEU NOME É: $n $s</p>")
+      ?>
+
+      </main>
 </body>
 </html>
