@@ -27,12 +27,13 @@
 
        if($valor != null){
   
-        
-        $arr2 = explode(".", $valor);
+        $int = (int) $valor;
+        $fra = $valor - $int;
+
        
         echo ("Valor Normal: $valor
-        <br>Valor Inteiro: $arr2[0]
-        <br>Valor Decimal: $arr2[1]");
+        <br>Valor Inteiro: ".number_format($int,0,",",".")."
+        <br>Valor Decimal: ".number_format($fra,2,",","."));
         }else{
             echo "Erro";
         }
