@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../ultils/style.css">
-    <title>Exemplo -
+    <title>
         <?php
-        $titulo = "07_Estrutura_de_Controle";
+        $titulo = "07-Forms";
 
         echo "$titulo";
         ?>
@@ -24,20 +24,6 @@
 
 
         <?php
-
-        $var = 0;
-
-        // Avaliado como verdadeiro porque $var está vazia
-        if (empty($var)) {
-            echo '$var é 0, vazia ou não definida';
-        }
-        echo '<br>';
-
-        // Avaliado como verdadeiro porque $var está definida
-        if (isset($var)) {
-            echo '$var está definida embora esteja vazia';
-        }
-        ?>
 
         ?>
 
