@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//Importar controller
+use App\Http\Controllers\ProdutoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,3 +61,8 @@ Route::group([
         return "ROTA ADMIN - lista de usuários";
     })->name("users");
 });
+
+
+//Controllers
+
+Route::resource('/produtos', ProdutoController::class);
